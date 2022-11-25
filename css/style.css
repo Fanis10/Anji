@@ -345,7 +345,7 @@ li {
   color: #FFFFFF;
 }
 .tour__btn:hover {
-  background: #000000;
+  background: rgba(255, 255, 255, 0.4);
 }
 .tour__btn i {
   width: 32px;
@@ -410,8 +410,8 @@ li {
   color: #121212;
 }
 .popular-tours__btn:hover {
-  background: #000000;
-  color: #FFFFFF;
+  background: #E0E0E0;
+  color: #121212;
 }
 .popular-tours__btn i {
   width: 32px;
@@ -703,6 +703,21 @@ li {
   background: #E8E8E8;
   border-radius: 16.5px;
   margin-left: 25px;
+  position: relative;
+}
+.reviews__tabs-btns:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  background: #3FB3F5;
+  border-radius: 16.5px;
+  transition: all .3s;
+}
+.reviews__tabs-btns._second:before {
+  left: 50%;
 }
 .reviews__tab {
   width: 252px;
@@ -711,16 +726,11 @@ li {
   font-size: 38.6117px;
   line-height: 47px;
   color: #707070;
+  position: relative;
+  z-index: 2;
 }
 .reviews__tab--active {
-  background: #3FB3F5;
   color: #FFFFFF;
-  border-radius: 16.5px;
-}
-.reviews__tab:hover {
-  background: #3FB3F5;
-  color: #FFFFFF;
-  border-radius: 16.5px;
 }
 .reviews__tabs-body {
   margin-top: 55px;
@@ -1337,6 +1347,8 @@ li {
   backdrop-filter: blur(6px);
   border-radius: 8px;
   margin-top: -18px;
+  position: relative;
+  z-index: 2;
 }
 .card__subtitle span {
   width: 2px;
@@ -1434,9 +1446,18 @@ li {
   font-weight: 600;
   font-size: 24px;
   color: #000000;
+  transition: all 0.3s;
 }
 .form-group input::placeholder {
   color: #BDBDBD;
+}
+.form-group input:hover {
+  background-color: #FFFFFF;
+  backdrop-filter: blur(6px);
+}
+.form-group input:focus {
+  background-color: #FFFFFF;
+  backdrop-filter: blur(6px);
 }
 .form-btn {
   background: #3FB3F5;
@@ -1445,7 +1466,8 @@ li {
   color: #FFFFFF;
 }
 .form-btn:hover {
-  background: #0387d2;
+  background: #12A2F3;
+  backdrop-filter: blur(6px);
 }
 
 @media screen and (max-width: 1200px) {

@@ -60,6 +60,8 @@
       backdrop-filter: blur(6px);
       border-radius: 8px;
       margin-top: -18px;
+      position: relative;
+      z-index: 2;
       span {
         width: 2px;
         height: 2px;
@@ -157,8 +159,17 @@
       font-weight: 600;
       font-size: 24px;
       color: $black;
+      transition: all 0.3s;
       &::placeholder {
         color: $gray;
+      }
+      &:hover {
+        background-color: $white;
+        backdrop-filter: blur(6px);
+      }
+      &:focus {
+        background-color: $white;
+        backdrop-filter: blur(6px);
       }
     }
   }
@@ -169,6 +180,7 @@
     color: $white;
     &:hover {
       background: $blue5;
+      backdrop-filter: blur(6px);
     }
   }
 }

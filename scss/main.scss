@@ -22,13 +22,13 @@
   &__btn {
     width: 378px;
     height: 80px;
-    background: $gray4;
+    background: $white6;
     backdrop-filter: blur(6px);
     border-radius: 72px;
     margin: 175px auto 0;
     color: $white;
     &:hover {
-      background: $black;
+      background: $white5;
     }
     i {
       width: 32px;
@@ -93,8 +93,8 @@
     border-radius: 72px;
     color: $black2;
     &:hover {
-      background: $black;
-      color: $white;
+      background: $gray7;
+      color: $black2;
     }
     i {
       width: 32px;
@@ -397,6 +397,26 @@
     background: $gray5;
     border-radius: 16.5px;
     margin-left: 25px;
+    position: relative;
+    &:before{
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 50%;
+      height: 100%;
+      background: $blue;
+      border-radius: 16.5px;
+      transition: all .3s;
+    }
+    &._second{
+      &:before{
+        left: 50%;
+      }
+    }
+    &:hover {
+
+    }
   }
   &__tab {
     width: 252px;
@@ -405,15 +425,10 @@
     font-size: 38.6117px;
     line-height: 47px;
     color: $gray2;
+    position: relative;
+    z-index: 2;
     &--active {
-      background: $blue;
       color: $white;
-      border-radius: 16.5px;
-    }
-    &:hover {
-      background: $blue;
-      color: $white;
-      border-radius: 16.5px;
     }
   }
   &__tabs-body {

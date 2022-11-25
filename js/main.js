@@ -69,9 +69,17 @@ function setToggleBlocksHeight() {
 // Tabs
 const tabs = document.querySelectorAll('.reviews__tab');
 const contents = document.querySelectorAll('.reviews__content');
+const tabsContainer = document.querySelector('.reviews__tabs-btns');
 
 tabs.forEach((tab, index) => {
     tab.addEventListener('click', () => {
+        if(index === 0){
+            tabsContainer.classList.remove("_second")
+        } else{
+            tabsContainer.classList.add("_second")
+        }
+
+
         contents.forEach((content) => {
             content.classList.remove('reviews__content--active');
         });
