@@ -101,11 +101,14 @@ li {
 }
 
 .container {
-  margin: 0 auto;
-  padding: 0 15px;
-  max-width: 1330px;
+  padding: 0;
 }
 
+@media screen and (max-width: 576px) {
+  .container {
+    padding: 0 15px;
+  }
+}
 .header__inner {
   display: flex;
   justify-content: space-between;
@@ -313,6 +316,14 @@ li {
     width: 12px;
   }
 }
+@media screen and (max-width: 576px) {
+  .header .container {
+    padding: 0;
+  }
+  .header__inner {
+    padding: 0 15px;
+  }
+}
 .tour {
   padding-bottom: 75px;
 }
@@ -494,9 +505,6 @@ li {
 .gallery {
   margin-top: -415px;
   padding: 0 0 85px;
-}
-.gallery .container {
-  padding: 0;
 }
 .gallery__inner {
   display: flex;
@@ -1089,10 +1097,6 @@ li {
   .gallery {
     margin-top: -215px;
     padding: 0 0 50px;
-  }
-  .gallery .container {
-    width: calc(100% + 54px);
-    margin-left: -27px;
   }
   .gallery__inner {
     padding: 0;

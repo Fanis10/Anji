@@ -103,7 +103,11 @@ li {
 }
 
 .container {
-  margin: 0 auto;
-  padding: 0 15px;
-  max-width: 1330px;
+  padding: 0;
+}
+
+@media screen and (max-width: 576px) {
+  .container {
+    padding: 0 15px;
+  }
 }

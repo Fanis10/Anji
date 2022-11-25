@@ -160,5 +160,10 @@
     height: 16px; }
     .header .burger span:nth-child(2) {
       width: 12px; } }
+@media screen and (max-width: 576px) {
+  .header .container {
+    padding: 0; }
+  .header__inner {
+    padding: 0 15px; } }
 
 /*# sourceMappingURL=header.css.map */

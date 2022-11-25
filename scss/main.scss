@@ -181,9 +181,6 @@
 .gallery {
   margin-top: -415px;
   padding: 0 0 85px;
-  .container {
-    padding: 0;
-  }
   &__inner {
     display: flex;
     flex-wrap: wrap;
@@ -819,10 +816,6 @@
   .gallery {
     margin-top: -215px;
     padding: 0 0 50px;
-    .container {
-      width: calc(100% + 54px);
-      margin-left: -27px;
-    }
     &__inner {
       padding: 0;
     }
