@@ -28,6 +28,7 @@
   margin-top: 40px;
 }
 .card {
+  background: transparent;
     &:hover {
       .card__img img{
         transform: scale(1.1);
@@ -181,6 +182,7 @@
     &:hover {
       background: $blue5;
       backdrop-filter: blur(6px);
+      color: $white;
     }
   }
 }
