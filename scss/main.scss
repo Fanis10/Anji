@@ -425,8 +425,15 @@
     color: $gray2;
     position: relative;
     z-index: 2;
+    font-weight: 600;
+    font-size: 38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
     &--active {
       color: $white;
+      border-radius: 16.5px;
       &:hover {
         color: $white;
       }

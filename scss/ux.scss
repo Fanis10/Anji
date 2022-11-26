@@ -10,6 +10,11 @@
   transition: all 0.3s;
   cursor: pointer;
   padding: 0;
+  &:active {
+    background: $blue6 !important;
+    border: unset;
+    color: $white !important;
+  }
 }
 .display1 {
   font-weight: 800;

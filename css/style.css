@@ -738,9 +738,16 @@ li {
   color: #707070;
   position: relative;
   z-index: 2;
+  font-weight: 600;
+  font-size: 38px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
 }
 .reviews__tab--active {
   color: #FFFFFF;
+  border-radius: 16.5px;
 }
 .reviews__tab--active:hover {
   color: #FFFFFF;
@@ -1305,6 +1312,11 @@ li {
   transition: all 0.3s;
   cursor: pointer;
   padding: 0;
+}
+.btn:active {
+  background: #0A80C2 !important;
+  border: unset;
+  color: #FFFFFF !important;
 }
 
 .display1 {
