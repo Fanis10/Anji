@@ -1,7 +1,7 @@
 @import "vars";
 
 
-.btn {
+.mbtn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -15,6 +15,16 @@
     border: unset;
     color: $white !important;
   }
+}
+.mbtn2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  font-size: 24px;
+  transition: all 0.3s;
+  cursor: pointer;
+  padding: 0;
 }
 .display1 {
   font-weight: 800;

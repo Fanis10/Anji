@@ -1303,7 +1303,7 @@ li {
     bottom: -40px;
   }
 }
-.btn {
+.mbtn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1313,10 +1313,21 @@ li {
   cursor: pointer;
   padding: 0;
 }
-.btn:active {
+.mbtn:active {
   background: #0A80C2 !important;
   border: unset;
   color: #FFFFFF !important;
+}
+
+.mbtn2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  font-size: 24px;
+  transition: all 0.3s;
+  cursor: pointer;
+  padding: 0;
 }
 
 .display1 {
