@@ -9,7 +9,29 @@ function slider() {
         },
     })
 }
-slider()
+
+function sliderGallery() {
+    var swiper = new Swiper('.gallery-two .swiper', {
+        slidesPerView: 'auto',
+        spaceBetween: 0,
+        loop: false,
+        navigation: {
+            nextEl: '.gallery-two .swiper-button-next',
+            prevEl: '.gallery-two .swiper-button-prev',
+        },
+        breakpoints: {
+            320: {
+                slidesPerView: 1.5,
+                spaceBetween: 12,
+            },
+            768: {
+                slidesPerView: 'auto',
+            },
+        }
+    })
+}
+slider();
+sliderGallery();
 
 // Menu
 let burger = document.querySelector('.burger');
@@ -94,7 +116,7 @@ tabs.forEach((tab, index) => {
 
 // Animation
 AOS.init({
-    disable: 'phone',
+    disable: '',
     startEvent: 'DOMContentLoaded',
     initClassName: 'aos-init',
     animatedClassName: 'aos-animate',
@@ -111,3 +133,6 @@ AOS.init({
     mirror: false,
     anchorPlacement: 'top-bottom',
 });
+
+// fancybox
+Fancybox.defaults.placeFocusBack = false

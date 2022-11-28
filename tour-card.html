@@ -1,0 +1,407 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Карточка тура</title>
+    <link rel="stylesheet" href="css/fancybox.css">
+    <link rel="stylesheet" href="animation/aos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="bootstrsp/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <a href="" class="header__mob">
+                    <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19.3751 8C19.3751 8.29837 19.2565 8.58451 19.0456 8.79549C18.8346 9.00647 18.5484 9.125 18.2501 9.125H4.46883L9.29695 13.9531C9.40183 14.0576 9.48505 14.1818 9.54183 14.3186C9.59861 14.4553 9.62784 14.6019 9.62784 14.75C9.62784 14.8981 9.59861 15.0447 9.54183 15.1814C9.48505 15.3182 9.40183 15.4424 9.29695 15.5469C9.08466 15.7564 8.79837 15.8739 8.50008 15.8739C8.20179 15.8739 7.9155 15.7564 7.7032 15.5469L0.953202 8.79687C0.848322 8.69236 0.765105 8.56816 0.708324 8.43142C0.651543 8.29467 0.622314 8.14806 0.622314 8C0.622314 7.85193 0.651543 7.70532 0.708324 7.56858C0.765105 7.43183 0.848322 7.30764 0.953202 7.20312L7.7032 0.453123C7.91455 0.241779 8.20119 0.123047 8.50008 0.123047C8.64807 0.123047 8.79461 0.152196 8.93134 0.208831C9.06807 0.265466 9.1923 0.348476 9.29695 0.453123C9.4016 0.557771 9.48461 0.682005 9.54124 0.818733C9.59788 0.955461 9.62703 1.10201 9.62703 1.25C9.62703 1.39799 9.59788 1.54454 9.54124 1.68126C9.48461 1.81799 9.4016 1.94223 9.29695 2.04687L4.46883 6.875H18.2501C18.5484 6.875 18.8346 6.99353 19.0456 7.2045C19.2565 7.41548 19.3751 7.70163 19.3751 8Z" fill="black"/>
+                    </svg>
+                </a>
+                <div class="header__left">
+                    <a class="header__logo" href="`">
+                        <img src="img/logo.svg" alt="">
+                    </a>
+                </div>
+                <div class="header__right">
+                    <nav class="header__nav">
+                        <ul class="header__list">
+                            <li>
+                                <a href=""> Туры</a>
+                            </li>
+                            <li>
+                                <a href="">Маршруты</a>
+                            </li>
+                            <li>
+                                <a href="">Блог</a>
+                            </li>
+                            <li>
+                                <a href="">Вопрос/Ответ</a>
+                            </li>
+                            <li>
+                                <a href="">Отзывы</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="header__links">
+                        <a class="header__tel" href="tel:+7 000 000 00 00">+7 000 000 00 00</a>
+                        <div class="header__social">
+                            <a class="header__whatsapp" href="">
+                                <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M16.4156 4.65939C14.8714 3.34231 12.8997 2.63403 10.8704 2.66747C8.84108 2.70091 6.89375 3.47377 5.39382 4.84101C3.89389 6.20825 2.94448 8.07588 2.72376 10.0934C2.50304 12.1109 3.02619 14.1397 4.19502 15.7989C4.40424 16.0959 4.44361 16.4804 4.29892 16.8136L3.35353 18.9909L6.70234 18.3941C6.92008 18.3553 7.14452 18.3868 7.34316 18.4841C9.16597 19.3765 11.2518 19.5731 13.2093 19.0369C15.1667 18.5007 16.8612 17.2686 17.9747 15.5718C19.0883 13.875 19.5443 11.8301 19.2572 9.82096C18.9701 7.8118 17.9597 5.97647 16.4156 4.65939ZM10.836 0.584423C13.3727 0.542624 15.8373 1.42797 17.7675 3.07432C19.6977 4.72067 20.9608 7.01484 21.3196 9.52629C21.6784 12.0377 21.1084 14.5938 19.7165 16.7148C18.3246 18.8358 16.2065 20.376 13.7597 21.0462C11.425 21.6858 8.94428 21.4914 6.74246 20.5031L1.80745 21.3826C1.42961 21.4499 1.04536 21.3041 0.807401 21.0029C0.569447 20.7018 0.516346 20.2943 0.669204 19.9422L2.16291 16.5022C0.933921 14.5268 0.398533 12.1909 0.652785 9.86684C0.928685 7.34493 2.11545 5.01039 3.99036 3.30135C5.86527 1.5923 8.29943 0.626222 10.836 0.584423Z" fill="#1B7E1E"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.29065 6.75208C7.58368 6.45905 7.98111 6.29443 8.39551 6.29443C8.80991 6.29443 9.20734 6.45905 9.50036 6.75208C9.79339 7.04511 9.95801 7.44254 9.95801 7.85693V8.8986C9.95801 9.313 9.79339 9.71043 9.50036 10.0035C9.39499 10.1088 9.27613 10.1976 9.14782 10.2681C9.35244 10.856 9.68817 11.3963 10.1367 11.8449C10.5853 12.2934 11.1256 12.6292 11.7135 12.8338C11.784 12.7055 11.8728 12.5866 11.9782 12.4812C12.2712 12.1882 12.6686 12.0236 13.083 12.0236H14.1247C14.5391 12.0236 14.9365 12.1882 15.2295 12.4812C15.5226 12.7743 15.6872 13.1717 15.6872 13.5861C15.6872 14.0005 15.5226 14.3979 15.2295 14.691C14.9365 14.984 14.5391 15.1486 14.1247 15.1486H13.083C11.4254 15.1486 9.83569 14.4901 8.66359 13.318C7.49149 12.1459 6.83301 10.5562 6.83301 8.8986V7.85693C6.83301 7.44254 6.99763 7.04511 7.29065 6.75208Z" fill="#1B7E1E"/>
+                                </svg>
+                            </a>
+                            <a class="header__telegram" href="">
+                                <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M21.0635 0.885234C21.3556 1.1427 21.4797 1.54158 21.3852 1.91933L17.2186 18.586C17.1276 18.9501 16.8477 19.237 16.4861 19.3372C16.1244 19.4374 15.7368 19.3353 15.4714 19.0699L11.1124 14.7109L8.70801 17.9167C8.47555 18.2266 8.09026 18.382 7.70782 18.3199C7.32539 18.2578 7.00899 17.9886 6.88647 17.6211L4.93958 11.7804L1.15883 9.89005C0.790315 9.70579 0.565032 9.32163 0.584134 8.91006C0.603235 8.49849 0.863132 8.13685 1.24713 7.98751L19.9971 0.695847C20.36 0.554719 20.7713 0.627772 21.0635 0.885234ZM11.7489 12.4011C11.7412 12.3932 11.7334 12.3853 11.7254 12.3776L11.4312 12.0834L14.8613 8.65325C15.268 8.24646 15.268 7.58691 14.8613 7.18012C14.4545 6.77332 13.7949 6.77332 13.3881 7.18012L9.22145 11.3468C8.81465 11.7536 8.81465 12.4131 9.22145 12.8199L9.62429 13.2228L8.2342 15.0762L6.77956 10.7123C6.6922 10.4502 6.5043 10.2335 6.25719 10.11L4.19225 9.07752L18.8758 3.36724L15.6437 16.2959L11.7489 12.4011Z" fill="#114151"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="breadcrumbs">
+        <div class="container">
+            <div class="breadcrumbs__items">
+                <a href="index.html" class="breadcrumbs__item">Главная</a>
+                <a href="" class="breadcrumbs__item">Все туры</a>
+                <span class="breadcrumbs__item">Гуниб — Чох — Гамсутль</span>
+            </div>
+        </div>
+    </div>
+
+    <main class="content">
+        <div class="container">
+            <div class="content__title">Гуниб — Чох — Гамсутль</div>
+            <div class="content__inner">
+                <section class="gallery-two">
+                    <div class="gallery-two__slider">
+                            <div class="swiper mySwiper">
+                                <div class="swiper-wrapper">
+                                    <a class="swiper-slide" href="img/gallery-two.webp" data-fancybox="gallery2">
+                                        <img src="img/gallery-two.webp" alt="">
+                                    </a>
+                                    <a class="swiper-slide" href="img/gallery-two.webp" data-fancybox="gallery2">
+                                        <img src="img/gallery-two.webp" alt="">
+                                    </a>
+                                    <a class="swiper-slide" href="img/gallery-two.webp" data-fancybox="gallery2">
+                                        <img src="img/gallery-two.webp" alt="">
+                                    </a>
+                                    <a class="swiper-slide" href="img/gallery-two.webp" data-fancybox="gallery2">
+                                        <img src="img/gallery-two.webp" alt="">
+                                    </a>
+                                    <a class="swiper-slide" href="img/gallery-two.webp" data-fancybox="gallery2">
+                                        <img src="img/gallery-two.webp" alt="">
+                                        <span>еще 17 фото</span>
+                                    </a>
+                                </div>
+                                <div class="gallery-two__next swiper-button-next"></div>
+                                <div class="gallery-two__prev swiper-button-prev"></div>
+                                <div class="gallery-two__pagination swiper-pagination"></div>
+                            </div>
+                        </div>
+                    <div class="aside">
+                            <div class="aside__inner">
+                                <div class="aside__title">Длительность и цены</div>
+                                <div class="aside__info">
+                                    <div class="aside__info-left">
+                                        <div class="aside__info-question">Длительность</div>
+                                        <div class="aside__info-question">Цена за взрослого</div>
+                                        <div class="aside__info-question">Дети до 12</div>
+                                    </div>
+                                    <div class="aside__info-right">
+                                        <div class="aside__info-answer">2 дня / 1 ночь</div>
+                                        <div class="aside__info-answer">12 000 ₽</div>
+                                        <div class="aside__info-answer">8 000 ₽</div>
+                                    </div>
+                                </div>
+                                <div class="aside__guarantees">
+                                    <div class="aside__subtitle">
+                                        <i>
+                                            <img src="img/aside.svg" alt="">
+                                        </i>
+                                        <span>Моментальное бронирование</span>
+                                    </div>
+                                    <div class="aside__subtitle">
+                                        <i>
+                                            <img src="img/aside2.svg" alt="">
+                                        </i>
+                                        <span>Полный возврат при отмене</span>
+                                    </div>
+                                </div>
+                                <div class="aside__bottom">
+                                    <button class="aside__btn mbtn">Оставить заявку</button>
+                                    <p class="aside__desc">Сейчас вы ни за что не платите</p>
+                                </div>
+                            </div>
+                        </div>
+                </section>
+                <section class="description">
+                        <div class="description__top">
+                            <div class="description__item">
+                                <div class="description__item-img">
+                                    <img src="img/description.svg" alt="">
+                                </div>
+                                <div class="description__item-title">2 дня</div>
+                            </div>
+                            <div class="description__item">
+                                <div class="description__item-img">
+                                    <img src="img/description2.svg" alt="">
+                                </div>
+                                <div class="description__item-title">10 человек</div>
+                            </div>
+                            <div class="description__item">
+                                <div class="description__item-img">
+                                    <img src="img/description3.svg" alt="">
+                                </div>
+                                <div class="description__item-title">Пеший</div>
+                            </div>
+                        </div>
+                           <div class="description__inner">
+                               <div class="description__title">Описание</div>
+                               <div class="description__desc">
+                                   <p>
+                                       На земле есть места, где время словно замирает. Они веками копят невероятную энергию и непостижимую мудрость, безмолвно взирают на современный мир и мерно ждут очередного тысячелетия. Оказавшись там, человек осознает истинный смысл жизни и больше не распаляется на мелочи.
+                                   </p>
+                                   <p>
+                                       Таких мест немало в Дагестане, где величественные горы пронзают облака и устремляются к солнцу. Его пейзажи способны навсегда отпечататься в памяти каждого туриста, ступившего на эту землю и ощутившего ее незримую силу. Чтобы это понять, нужно хотя бы раз приехать сюда. И мы готовы в этом помочь.
+                                   </p>
+                                   <p>
+                                       Незабываемая экскурсия по красивейшим местам Дагестана
+                                   </p>
+                                   <p>
+                                       Компания «ХазарТур» стремится показать красоту Республики широкому кругу людей и организует групповые экскурсии. Сулакский каньон, бархан Сарыкум и село Зубутли — это те места, с которых стоит начать путешествие. Именно здесь туристы получают шанс прикоснуться к девственной природе и окунуться в атмосферу умиротворения. Под шум горных рек и рев ветра они смогут задуматься о бренности бытия и по-другому взглянуть на существующие проблемы.
+                                   </p>
+                                   <p>
+                                       Что входит в программу?
+                                   </p>
+                                   <p>
+                                       Мы разработали оптимальные маршруты, которые позволят увидеть несколько удивительных мест и по-настоящему отвлечься от серых будней.
+                                   </p>
+                               </div>
+                           </div>
+                    </section>
+                <section class="program">
+                        <div class="program__inner">
+                            <div class="program__title">Программа продукта</div>
+                            <div class="program__items">
+                                <div class="program__item">
+                                    <div class="program__item-inner">
+                                        <div class="program__item-img">
+                                            <img src="img/program.svg" alt="">
+                                        </div>
+                                        <div class="program__item-desc">
+                                            <div class="program__item-title">Happy New Year 2023 по-дагестански</div>
+                                            <div class="program__item-time">8:30</div>
+                                            <div class="program__item-text">
+                                                На земле есть места, где время словно замирает. Они веками копят невероятную энергию и непостижимую мудрость, безмолвно взирают на современный мир и мерно ждут очередного тысячелетия. Оказавшись там, человек осознает истинный смысл жизни и больше не распаляется на мелочи.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="program__item">
+                                    <div class="program__item-inner">
+                                        <div class="program__item-img">
+                                            <img src="img/program.svg" alt="">
+                                        </div>
+                                        <div class="program__item-desc">
+                                            <div class="program__item-title">Happy New Year 2023 по-дагестански</div>
+                                            <div class="program__item-time">8:30</div>
+                                            <div class="program__item-text">
+                                                На земле есть места, где время словно замирает. Они веками копят невероятную энергию и непостижимую мудрость, безмолвно взирают на современный мир и мерно ждут очередного тысячелетия. Оказавшись там, человек осознает истинный смысл жизни и больше не распаляется на мелочи.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="program__item">
+                                    <div class="program__item-inner">
+                                        <div class="program__item-img">
+                                            <img src="img/program.svg" alt="">
+                                        </div>
+                                        <div class="program__item-desc">
+                                            <div class="program__item-title">Happy New Year 2023 по-дагестански</div>
+                                            <div class="program__item-time">8:30</div>
+                                            <div class="program__item-text">
+                                                На земле есть места, где время словно замирает. Они веками копят невероятную энергию и непостижимую мудрость, безмолвно взирают на современный мир и мерно ждут очередного тысячелетия. Оказавшись там, человек осознает истинный смысл жизни и больше не распаляется на мелочи.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="program__item">
+                                    <div class="program__item-inner">
+                                        <div class="program__item-img">
+                                            <img src="img/program.svg" alt="">
+                                        </div>
+                                        <div class="program__item-desc">
+                                            <div class="program__item-title">Happy New Year 2023 по-дагестански</div>
+                                            <div class="program__item-time">8:30</div>
+                                            <div class="program__item-text">
+                                                На земле есть места, где время словно замирает. Они веками копят невероятную энергию и непостижимую мудрость, безмолвно взирают на современный мир и мерно ждут очередного тысячелетия. Оказавшись там, человек осознает истинный смысл жизни и больше не распаляется на мелочи.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                <section class="details">
+                        <div class="container">
+                            <div class="details__inner">
+                                <div class="details__items">
+                                    <div class="details__item slideToggle-block">
+                                        <div class="details__item-show slideToggle-block__show">
+                                            <div class="details__item-title">Организационные детали</div>
+                                            <button class="details__item-btn">
+                                                <img src="img/arrow-show.svg" alt="">
+                                            </button>
+                                        </div>
+                                        <div class="details__item-hidden slideToggle-block__hidden">
+                                           <div class="details__item-wrap slideToggle-block__wrap">
+                                               <div class="details__item-text">Мы встречаем каждого в аэропорту и отвозим по отелям чтобы вы могли отдохнуть с пути.
+                                                   На следующий день собираемся у памятника Кирову на проспекте Гамидова, оттуда отправимся в путь!
+                                               </div>
+                                               <div class="details__item-map">
+                                                   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2064.0117898182584!2d47.49526472774527!3d42.979253873072025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x404ea05b6f21f85b%3A0x31336e47f4d72066!2z0YPQuy4g0JTQt9C10YDQttC40L3RgdC60L7Qs9C-LCDQnNCw0YXQsNGH0LrQsNC70LAsINCg0LXRgdC_LiDQlNCw0LPQtdGB0YLQsNC9LCDQoNC-0YHRgdC40Y8!5e0!3m2!1sru!2s!4v1669205919435!5m2!1sru!2s" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                               </div>
+                                           </div>
+                                        </div>
+                                    </div>
+                                    <div class="details__item slideToggle-block">
+                                        <div class="details__item-show slideToggle-block__show">
+                                            <div class="details__item-title">Место встречи</div>
+                                            <button class="details__item-btn">
+                                                <img src="img/arrow-show.svg" alt="">
+                                            </button>
+                                        </div>
+                                        <div class="details__item-hidden slideToggle-block__hidden">
+                                            <div class="details__item-wrap slideToggle-block__wrap">
+                                                <div class="details__item-text">Мы встречаем каждого в аэропорту и отвозим по отелям чтобы вы могли отдохнуть с пути.
+                                                    На следующий день собираемся у памятника Кирову на проспекте Гамидова, оттуда отправимся в путь!
+                                                </div>
+                                                <div class="details__item-map">
+                                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2064.0117898182584!2d47.49526472774527!3d42.979253873072025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x404ea05b6f21f85b%3A0x31336e47f4d72066!2z0YPQuy4g0JTQt9C10YDQttC40L3RgdC60L7Qs9C-LCDQnNCw0YXQsNGH0LrQsNC70LAsINCg0LXRgdC_LiDQlNCw0LPQtdGB0YLQsNC9LCDQoNC-0YHRgdC40Y8!5e0!3m2!1sru!2s!4v1669205919435!5m2!1sru!2s" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+            </div>
+        </div>
+    </main>
+
+    <section class="similar-tours">
+      <div class="container">
+          <div class="similar-tours__inner">
+              <div class="similar-tours__title display2">Похожие туры</div>
+              <div class="similar-tours__items cards">
+                  <a href="" class="similar-tours__item card">
+                      <div class="similar-tours__item-img card__img">
+                          <img src="img/popular-tours.png" alt="">
+                      </div>
+                      <div class="similar-tours__item-desc card__desc">
+                          <div class="similar-tours__item-subtitle card__subtitle">Махачкала <span></span> 2 часа</div>
+                          <div class="similar-tours__item-title card__title">Happy New Year 2023 по-дагестански</div>
+                          <div class="similar-tours__item-price card__price">35 000 ₽<span>с взрослого</span></div>
+                      </div>
+                  </a>
+                  <a href="" class="similar-tours__item card">
+                      <div class="similar-tours__item-img card__img">
+                          <img src="img/popular-tours2.png" alt="">
+                      </div>
+                      <div class="similar-tours__item-desc card__desc">
+                          <div class="similar-tours__item-subtitle card__subtitle">Махачкала <span></span> 2 часа</div>
+                          <div class="similar-tours__item-title card__title">Happy New Year 2023 по-дагестански</div>
+                          <div class="similar-tours__item-price card__price">35 000 ₽<span>с взрослого</span></div>
+                      </div>
+                  </a>
+                  <a href="" class="similar-tours__item card">
+                      <div class="similar-tours__item-img card__img">
+                          <img src="img/popular-tours3.png" alt="">
+                      </div>
+                      <div class="similar-tours__item-desc card__desc">
+                          <div class="similar-tours__item-subtitle card__subtitle">Махачкала <span></span> 2 часа</div>
+                          <div class="similar-tours__item-title card__title">Happy New Year 2023 по-дагестански</div>
+                          <div class="similar-tours__item-price card__price">35 000 ₽<span>с взрослого</span></div>
+                      </div>
+                  </a>
+              </div>
+          </div>
+      </div>
+    </section>
+    <section class="map">
+        <div class="container">
+            <div class="map__inner">
+                <div class="map__left">
+                    <div class="map__data">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2064.0117898182584!2d47.49526472774527!3d42.979253873072025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x404ea05b6f21f85b%3A0x31336e47f4d72066!2z0YPQuy4g0JTQt9C10YDQttC40L3RgdC60L7Qs9C-LCDQnNCw0YXQsNGH0LrQsNC70LAsINCg0LXRgdC_LiDQlNCw0LPQtdGB0YLQsNC9LCDQoNC-0YHRgdC40Y8!5e0!3m2!1sru!2s!4v1669205919435!5m2!1sru!2s" width="530" height="370" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+                <div class="map__right">
+                    <nav class="map__nav">
+                        <ul class="map__list">
+                            <li>
+                                <a href="">Туры</a>
+                            </li>
+                            <li>
+                                <a href="">Маршруты</a>
+                            </li>
+                            <li>
+                                <a href="">Блог</a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    Вопрос/Ответ
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">Отзывы</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="map__subtitle">Звоните, пишите</div>
+                    <div class="map__links connection__links">
+                        <a class="map__number connection__number" href="tel:+7 999 000 00 00">+7 999 000 00 00</a>
+                        <a class="map__whatsapp connection__whatsapp" href="">
+                            <svg width="34" height="35" viewBox="0 0 34 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M25.6651 7.48804C23.1944 5.38071 20.0396 4.24746 16.7928 4.30097C13.5459 4.35447 10.4302 5.59104 8.03031 7.77863C5.63042 9.96621 4.11137 12.9544 3.75821 16.1825C3.40506 19.4105 4.24209 22.6565 6.11222 25.3112C6.44698 25.7864 6.50997 26.4017 6.27846 26.9348L4.76584 30.4185L10.1239 29.4636C10.4723 29.4015 10.8314 29.4519 11.1493 29.6075C14.0657 31.0355 17.4031 31.35 20.535 30.4921C23.667 29.6342 26.3781 27.6628 28.1598 24.9479C29.9414 22.233 30.6711 18.9612 30.2117 15.7465C29.7524 12.5319 28.1357 9.59536 25.6651 7.48804ZM16.7379 0.968085C20.7964 0.901206 24.7399 2.31777 27.8282 4.95192C30.9166 7.58608 32.9374 11.2567 33.5116 15.2751C34.0857 19.2934 33.1737 23.3831 30.9466 26.7767C28.7196 30.1704 25.3306 32.6346 21.4157 33.707C17.6803 34.7302 13.7111 34.4192 10.1881 32.838L2.29211 34.2452C1.68757 34.3529 1.07276 34.1195 0.692038 33.6377C0.311311 33.1559 0.226349 32.5038 0.470921 31.9406L2.86085 26.4365C0.894469 23.2759 0.0378474 19.5384 0.444651 15.8199C0.886091 11.7849 2.78491 8.04964 5.78477 5.31516C8.78462 2.58068 12.6793 1.03496 16.7379 0.968085Z" fill="white"></path>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M11.0652 10.8367C11.5341 10.3679 12.17 10.1045 12.833 10.1045C13.496 10.1045 14.1319 10.3679 14.6008 10.8367C15.0696 11.3056 15.333 11.9415 15.333 12.6045V14.2712C15.333 14.9342 15.0696 15.5701 14.6008 16.0389C14.4322 16.2075 14.242 16.3495 14.0367 16.4623C14.3641 17.403 14.9013 18.2675 15.619 18.9852C16.3367 19.7029 17.2011 20.2401 18.1419 20.5675C18.2546 20.3622 18.3967 20.172 18.5652 20.0034C19.0341 19.5345 19.67 19.2712 20.333 19.2712H21.9997C22.6627 19.2712 23.2986 19.5345 23.7674 20.0034C24.2363 20.4722 24.4997 21.1081 24.4997 21.7712C24.4997 22.4342 24.2363 23.0701 23.7674 23.5389C23.2986 24.0078 22.6627 24.2712 21.9997 24.2712H20.333C17.6808 24.2712 15.1373 23.2176 13.2619 21.3422C11.3866 19.4669 10.333 16.9233 10.333 14.2712V12.6045C10.333 11.9415 10.5964 11.3056 11.0652 10.8367Z" fill="white"></path>
+                            </svg>
+                        </a>
+                        <a class="map__telegram connection__telegram" href="">
+                            <svg width="34" height="31" viewBox="0 0 34 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M33.1017 1.04919C33.5691 1.46113 33.7677 2.09934 33.6166 2.70373L26.9499 29.3704C26.8043 29.9529 26.3566 30.4121 25.7779 30.5724C25.1992 30.7326 24.5791 30.5693 24.1545 30.1447L17.18 23.1702L13.333 28.2995C12.9611 28.7954 12.3446 29.044 11.7327 28.9447C11.1208 28.8454 10.6146 28.4147 10.4185 27.8266L7.30352 18.4815L1.25433 15.4569C0.664699 15.1621 0.304247 14.5474 0.334809 13.8889C0.365372 13.2304 0.781206 12.6518 1.39561 12.4128L31.3956 0.746167C31.9762 0.520363 32.6343 0.637247 33.1017 1.04919ZM18.1985 19.4746C18.1862 19.4619 18.1736 19.4494 18.1608 19.437L17.69 18.9662L23.1782 13.478C23.8291 12.8271 23.8291 11.7719 23.1782 11.121C22.5273 10.4701 21.472 10.4701 20.8212 11.121L14.1545 17.7877C13.5036 18.4385 13.5036 19.4938 14.1545 20.1447L14.7991 20.7892L12.5749 23.7548L10.2475 16.7725C10.1077 16.3531 9.80707 16.0065 9.41171 15.8088L6.10779 14.1568L29.6015 5.02039L24.4301 25.7062L18.1985 19.4746Z" fill="white"></path>
+                            </svg>
+                        </a>
+                    </div>
+                    <a href="" class="map__privacy">Политика конфиденциальности</a>
+                    <div class="map__info">ИНН 000902390248</div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <script src="js/fancybox.umd.js"></script>
+    <script src="animation/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="bootstrsp/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

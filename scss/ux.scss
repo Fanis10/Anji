@@ -1,6 +1,36 @@
 @import "vars";
 
-
+.breadcrumbs {
+  padding: 32px 0 8px;
+  &__items {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp:1;
+    -webkit-box-orient: vertical;
+  }
+  &__item {
+    font-size: 14px;
+    line-height: 130%;
+    position: relative;
+    color: $black6;
+    &:not(:last-child) {
+      padding-right: 32px;
+      &:after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        right: 8px;
+        transform: translate(0, -50%);
+        width: 14px;
+        height: 9px;
+        background-image: url("../img/arrow.svg");
+        background-repeat: no-repeat;
+      }
+    }
+  }
+}
 .mbtn {
   display: flex;
   justify-content: center;
@@ -10,6 +40,15 @@
   transition: all 0.3s;
   cursor: pointer;
   padding: 0;
+  background: $blue;
+  backdrop-filter: blur(6px);
+  border-radius: 12px;
+  color: $white;
+  &:hover {
+    background: $blue5;
+    backdrop-filter: blur(6px);
+    color: $white;
+  }
   &:active {
     background: $blue6 !important;
     border: unset;
@@ -189,15 +228,16 @@
       }
     }
   }
-  &-btn {
-    background: $blue;
-    backdrop-filter: blur(6px);
-    border-radius: 12px;
-    color: $white;
-    &:hover {
-      background: $blue5;
-      backdrop-filter: blur(6px);
-      color: $white;
+}
+.nav {
+  padding: 50px 0;
+  &__inner {
+    a {
+      display: block;
+      font-size: 40px;
+      &:not(:first-child) {
+        margin-top: 20px;
+      }
     }
   }
 }

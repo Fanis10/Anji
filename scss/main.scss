@@ -563,6 +563,7 @@
   }
   &__right {
     position: relative;
+    flex-shrink: 0;
   }
   &__nav {
     position: absolute;
@@ -599,6 +600,8 @@
       left: 0;
       bottom: 0;
       border-radius: 12px;
+      width: 100%;
+      height: 370px;
     }
   }
   &__subtitle {
